@@ -1,0 +1,33 @@
+{
+  "name": "divkit-sdui",
+  "version": "1.0.0",
+  "description": "DivKit Server Driven UI Learning Project",
+  "private": true,
+  "workspaces": [
+    "server",
+    "clients/web"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:web": "cd clients/web && npm start",
+    "build": "npm run build:server && npm run build:web",
+    "build:server": "cd server && npm run build",
+    "build:web": "cd clients/web && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../clients/web && npm install",
+    "test": "npm run test:server && npm run test:web",
+    "test:server": "cd server && npm test",
+    "test:web": "cd clients/web && npm test",
+    "lint": "npm run lint:server && npm run lint:web",
+    "lint:server": "cd server && npm run lint",
+    "lint:web": "cd clients/web && npm run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "lerna": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

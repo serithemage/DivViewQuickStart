@@ -1,0 +1,68 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+build/
+dist/
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# iOS
+clients/ios/Pods/
+clients/ios/*.xcworkspace/
+clients/ios/*.xcodeproj/xcuserdata/
+clients/ios/DerivedData/
+clients/ios/build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+
+# Android
+clients/android/.gradle/
+clients/android/build/
+clients/android/local.properties
+clients/android/*.iml
+clients/android/app/build/
+clients/android/.idea/
+*.apk
+*.aab
+
+# Web
+clients/web/dist/
+clients/web/.cache/
+
+# Server
+server/dist/
+server/*.log
+
+# Lerna
+lerna-debug.log

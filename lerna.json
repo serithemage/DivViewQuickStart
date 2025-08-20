@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "1.0.0",
+  "npmClient": "npm",
+  "packages": [
+    "server",
+    "clients/*",
+    "shared"
+  ],
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    },
+    "version": {
+      "allowBranch": ["main", "develop"],
+      "message": "chore(release): publish %s"
+    }
+  }
+}
